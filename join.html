@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
   <head>
-    <link rel="stylesheet" href="/두근두근비밀일기/css/join.css" />
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
-"
-      rel="stylesheet"
-    />
-
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/join.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>회원가입</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <title>로그인</title>
   </head>
-  <main>
-    <header id="header" class="header">
-      <div class="headercontent">
-        <h1 class="sr-only">두근두근 비밀일기</h1>
-        <a href="#"><img src="./images/logo.png" alt="" class="headerlogo" /></a>
-        <a href="./login.html" class="newtext"
-          ><img src="images/loginbutton.png" alt="로그인 바로가기 버튼" ></a
-        >
-      </div  class="headercontent">
+  <body>
+    <header class="header" id="header">
+      <div class="header_content">
+        <h1 class="sr-only">두근두근비밀일기</h1>
+        <img src="./images/logo.png" alt="" class="main_logo" />
+        <div class="button_user">
+          <img src="./images/user.png" alt="" class="icon" /><a
+            href="/main.html"
+            >로그인</a
+          >
+        </div>
+      </div>
     </header>
     <main class="main" id="main">
-<div class="main01">
-        <h2 class="sr-only">두근두근 비밀일기</h2>
-        <img src="images/logo2.png" alt="" class="mainlogo">
-        <p><span class="highlight">회원가입</span></p>
-</div>
-      <form action="" class="formbox">
-        <label for="email">이메일</label><br>
-        <input type="email" name="email" id="email" /><br>
-
-        <label for="pw">패스워드</label><br>
-        <input type="pw" name="pw" id="pw" /><br>
-        <label for="nick">닉네임</label><br>
-        <input type="text" name="nick" id="nick" /><br>
-        <button type="submit" class="joinbutton">회원가입</button>
+      <h2>
+        <img src="./images/logo2.png" alt="" />
+        <p class="highlight">회원가입</p>
+      </h2>
+      <form action="">
+        <label for="email"
+          >이메일
+          <input type="email" id="email" />
+        </label>
+        <label for="password"
+          >비밀번호
+          <input type="pw" id="password" />
+        </label>
+        <label for="nickname"
+          >닉네임
+          <input type="text" id="nickname" />
+        </label>
+        <button type="submit">회원가입</button>
       </form>
     </main>
-    <footer class="footer" id="footer">
+    <footer>
       <p>Copyright 2023. WENIV All rights reserved.</p>
     </footer>
-
   </body>
 </html>
